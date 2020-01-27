@@ -1,3 +1,8 @@
+# Checkbox
+
+- Supports touch screen readers
+  - by placing transparent input-element with the SVG-icon
+
 ``` html
 <label for="checkbox-id" class="checkbox">
   <input type="checkbox" id="checkbox-id" class="checkbox__input" />
