@@ -86,13 +86,14 @@
 }
 </style>
 <label for="checkbox-id" class="checkbox" markdown="0">
-  <input type="checkbox" id="checkbox-id" class="checkbox__input" />
+  <input type="checkbox" id="checkbox-id" class="checkbox__input" markdown="0"/>
   <svg
     viewBox="0 0 100 100"
     width=".75em"
     height=".75em"
     xmlns="http://www.w3.org/2000/svg"
     class="checkbox__icon"
+    markdown="0"
   >
     <circle cx="50%" cy="50%" r="49" fill="#000" class="checked" />
     <circle
@@ -106,5 +107,5 @@
     />
     />
   </svg>
-  <span>Checkbox label</span>
+  <span markdown="0">Checkbox label</span>
 </label>
