@@ -40,9 +40,11 @@
   height: 0.75em;
   opacity: 0;
 }
+/* Set focus styles to icon */
 .checkbox .checkbox__input:focus + .checkbox__icon {
   outline: orangered auto 5px;
 }
+/* Modify unchecked and/or checked SVG styles */
 .checkbox .checkbox__input + .checkbox__icon .unchecked {
   opacity: 1;
 }
