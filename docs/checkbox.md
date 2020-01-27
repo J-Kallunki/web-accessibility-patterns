@@ -57,3 +57,27 @@
   opacity: 1;
 }
 ```
+
+<label for="checkbox-id" class="checkbox">
+  <input type="checkbox" id="checkbox-id" class="checkbox__input" />
+  <svg
+    viewBox="0 0 100 100"
+    width=".75em"
+    height=".75em"
+    xmlns="http://www.w3.org/2000/svg"
+    class="checkbox__icon"
+  >
+    <circle cx="50%" cy="50%" r="49" fill="#000" class="checked" />
+    <circle
+      cx="50%"
+      cy="50%"
+      r="42"
+      stroke="#000"
+      fill="transparent"
+      stroke-width="12"
+      class="unchecked"
+    />
+    />
+  </svg>
+  <span>Checkbox label</span>
+</label>
