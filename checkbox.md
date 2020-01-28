@@ -1,5 +1,7 @@
 # Checkbox
 
+🖥️[Example](checkbox-example.html)
+
 - Supports touch screen readers by placing transparent input-element aligned with the SVG-icon
 
 ``` html
