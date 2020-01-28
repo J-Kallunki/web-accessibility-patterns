@@ -1,0 +1,42 @@
+<style>
+  .accordion [aria-controls] {
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    color: #000;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #000;
+  }
+  .accordion [aria-controls]:focus {
+    /* Focus styles */
+  }
+</style>
+<div class="accordion" data-accordion="accordion-content-id">
+  <h2> 
+    <button aria-controls="accordion-content-id" aria-expanded="false">Title</button>
+  </h2>
+  <div class="accordion__content" id="accordion-content-id" hidden>
+    <p>Hideable content.</p>
+  </div>
+</div>
+<script type="text/javascript">
+const button = document.querySelector('[data-accordion="accordion-content-id"] [aria-expanded]');
+if (!!button) {
+  button.addEventListener('click', (e) => {
+    const id = e.currentTarget.getAttribute('aria-controls');
+    const content = document.querySelector(`[id="${id}"]`);
+    if (!content) return;
+    const expanded = e.currentTarget.getAttribute('aria-expanded') !== 'true';
+    e.currentTarget.setAttribute('aria-expanded', expanded);
+    if (expanded) {
+      content.removeAttribute('hidden')
+    } else {
+      content.setAttribute('hidden', true);
+    }
+  })
+}
+</script>
