@@ -4,3 +4,4 @@ Minimum HTML and CSS solutions for accessible UI patterns
 - [HTML document and landmarks](html-document.md)
 - [Checkbox](checkbox.md)
 - [Accordion](accordion.md)
+- [Windows High Contrast-mode](windows-high-contrast.md)
