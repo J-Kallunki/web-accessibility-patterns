@@ -1,0 +1,103 @@
+# Toggle
+
+🖥️[Example](toggle-example.html)
+
+- Implemented as radio group
+- Name legend and labels
+- Animate your SVG with CSS when changing the selection
+
+``` html
+<fieldset class="toggle" role="radiogroup">
+  <!-- Descriptive name for the option to toggle -->
+  <legend class="toggle__legend">Toggle option X</legend>
+  <div>
+    <label for="toggle-off" class="toggle__label">Off</label>
+    <span class="toggle__wrapper">
+      <input type="radio" name="toggle-option-x" id="toggle-off" checked />
+      <input type="radio" name="toggle-option-x" id="toggle-on" class="toggle__selector" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 150 100"
+        width="1.5em"
+        height="1em"
+        version="1.1"
+        class="toggle__icon"
+      >
+        <g class="track" fill="#000">
+          <rect x="25%" y="20%" width="50%" height="60%" />
+          <circle cx="25%" cy="50%" r="23.5%" />
+          <circle cx="75%" cy="50%" r="23.5%" />
+        </g>
+        <circle class="knob" cx="30%" cy="50%" r="30%" fill="#ff69b4" stroke="#ff69b4" stroke-width="4" />
+      </svg>
+    </span>
+    <label for="toggle-on" class="toggle__label">On</label>
+  </div>
+</fieldset>
+```
+
+```css
+.toggle {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.toggle__legend {
+  margin-bottom: .5em;
+}
+.toggle__label {
+  cursor: pointer;
+}
+.toggle [type='radio'] {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 -2px 0 0;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+.toggle__wrapper {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  /* Toggle size */
+  width: 4em;
+  height: 2em;
+  border-radius: 1.5em;
+}
+.toggle__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transition: all 0.1s ease-out;
+}
+/* SVG styles */
+.toggle__icon .track {
+  fill: #eee;
+}
+.toggle__icon .knob {
+  fill: hotpink;
+  stroke: hotpink;
+}
+/* Toggle ON SVG styles */
+.toggle__selector:checked ~ .toggle__icon .track {
+  fill: #333;
+}
+.toggle__selector:checked ~ .toggle__icon .knob {
+  transform: translateX(50%);
+}
+/* Toggle Focus SVG styles */
+.toggle [type='radio']:focus ~ .toggle__icon {
+  filter: drop-shadow( 0 0 6px orangered);
+}
+.toggle [type='radio']:focus ~ .toggle__icon .knob {
+  stroke: orangered;
+}
+```
