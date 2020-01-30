@@ -35,7 +35,7 @@
   position: relative;
 }
 /* Same placement as SVG and set to transparent */
-.checkbox .checkbox__input {
+.checkbox__input {
   position: absolute;
   /* SVG-icon size */
   width: 0.75em;
@@ -43,20 +43,20 @@
   opacity: 0;
 }
 /* Set focus styles to icon */
-.checkbox .checkbox__input:focus + .checkbox__icon {
+.checkbox__input:focus + .checkbox__icon {
   outline: orangered auto 5px;
 }
 /* Modify unchecked and/or checked SVG styles */
-.checkbox .checkbox__input + .checkbox__icon .unchecked {
+.checkbox__input + .checkbox__icon .unchecked {
   opacity: 1;
 }
-.checkbox .checkbox__input + .checkbox__icon .checked {
+.checkbox__input + .checkbox__icon .checked {
   opacity: 0;
 }
-.checkbox .checkbox__input:checked + .checkbox__icon .unchecked {
+.checkbox__input:checked + .checkbox__icon .unchecked {
   opacity: 0;
 }
-.checkbox .checkbox__input:checked + .checkbox__icon .checked {
+.checkbox__input:checked + .checkbox__icon .checked {
   opacity: 1;
 }
 ```
