@@ -1,14 +1,78 @@
-<label>
+<style>
+  .checkbox {
+    display: block;
+    /* Wrapper label styles */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 .5em 0;
+    padding: 0;
+  }
+  .checkbox [type='checkbox'] {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    box-sizing: inherit;
+    /* Checkbox box styles */
+    width: 1.25em;
+    height: 1.25em;
+    margin: 0 0.5em 0 0;
+    color: orange;
+    background-color: lightgoldenrodyellow;
+    border-radius: 4px;
+    border: 2px solid orange;
+    cursor: pointer;
+  }
+  .checkbox [type='checkbox']:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    box-sizing: inherit;
+    /* Checkbox selection styles */
+    height: 25%;
+    width: 50%;
+    border-radius: 2px 0 2px 2px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: translate(-50%, calc(-50% - 1px)) rotate(-45deg);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .checkbox [type='checkbox']:checked {
+    /* Checkbox checked box styles */
+    background-color: orange;
+    color: lightgoldenrodyellow;
+    border-color: orange;
+  }
+  .checkbox [type='checkbox']:checked:before {
+    opacity: 1;
+  }
+  .checkbox [type="checkbox"]:disabled {
+    opacity: .25;
+    border-color: darkgoldenrod;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  .checkbox [type='checkbox']:focus {
+    /* Focus styles */
+    outline: orangered auto 2px;
+  }
+</style>
+
+<label class="checkbox">
   <input type="checkbox" />
   Checkbox
 </label>
 
-<label>
+<label class="checkbox">
     <input type="checkbox" checked/>
     Checked
   </label>
 
-<label>
+<label class="checkbox">
   <input type="checkbox" disabled />
   Disabled
 </label>
