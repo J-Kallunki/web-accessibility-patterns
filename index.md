@@ -5,4 +5,5 @@ Minimum HTML and CSS solutions for accessible UI patterns
 - [Checkbox](checkbox.md)
 - [Toggle](toggle.md)
 - [Accordion](accordion.md)
+- [Search Button](search-button.md)
 - [Windows High Contrast-mode](windows-high-contrast.md)
