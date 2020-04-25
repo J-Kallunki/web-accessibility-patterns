@@ -1,6 +1,7 @@
-Minimum HTML and CSS solutions for accessible UI patterns
-
 ## Accessible UI Patterns
+
+Minimum HTML and CSS (+JS) solutions for accessible UI patterns
+
 - [HTML document and landmarks](html-document.md)
 - [Checkbox](checkbox.md)
 - [Checkbox with CSS](checkbox-css.md)
@@ -9,3 +10,5 @@ Minimum HTML and CSS solutions for accessible UI patterns
 - [Accordion](accordion.md)
 - [Search Button](search-button.md)
 - [Windows High Contrast-mode](windows-high-contrast.md)
+
+Brought to you by [https://github.com/j-kallunki](https://github.com/j-kallunki)
