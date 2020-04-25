@@ -1,5 +1,3 @@
-## Accessible UI Patterns
-
 Minimum HTML and CSS (+JS) solutions for accessible UI patterns
 
 - [HTML document and landmarks](html-document.md)
