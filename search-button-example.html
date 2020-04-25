@@ -1,0 +1,30 @@
+<style>
+  .search {
+    /* Container styles */
+    width: 100%;
+    max-width: 400px;
+  }
+  .search__button {
+    float: left;
+  }
+</style>
+
+<form action="." role="search" class="search">
+  <label for="search-input" class="visually-hidden" hidden>Search</label>
+  <input type="search" value="" id="search-input" hidden>
+  <button type="button" aria-label="Search" aria-expanded="false" class="search__button">
+    <svg
+      viewBox="0 0 20 20"
+      width=".75em"
+      height=".75em"
+      xmlns="http://www.w3.org/2000/svg"
+      class="search__icon"
+      focusable="false"
+    >
+      <path d="M19 17l-5.15-5.15a7 7 0 1 0-2 2L17 19zM3.5 8A4.5 4.5 0 1 1 8 12.5 4.5 4.5 0 0 1 3.5 8z"/>
+    </svg>
+    <span>Search</span>
+  </button>
+</form>
+
+// TODO 400ms before focus
