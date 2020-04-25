@@ -1,6 +1,6 @@
 # Search Button
 
-🖥️[Example](search-button.html)
+🖥️[Example](search-button-example.html)
 
 ## JavaScript
 
