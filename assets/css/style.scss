@@ -1,0 +1,18 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.site-title.site-title {
+  font-weight: 400;
+  &:before {
+    content: "\01F308";
+    padding-right: .25em;
+  }
+}
+.site-nav.site-nav {
+  line-height: initial;
+}
+.site-nav.site-nav .page-link {
+  text-decoration: underline;
+}
