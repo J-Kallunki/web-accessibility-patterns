@@ -4,7 +4,7 @@
 
 - Do not use onClick on divs
 - Use button for clickable actions
-- <a> can be used to navigate
+- `<a>` can be used to navigate
 
 ``` html
 <button class="button--without-styles">I am a button</button>
