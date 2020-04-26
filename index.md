@@ -1,6 +1,7 @@
 Minimum HTML and CSS (+JS) solutions for accessible UI patterns
 
 - [HTML document and landmarks](html-document.md)
+- [Button without styles](button.md)
 - [Checkbox](checkbox.md)
 - [Checkbox with CSS](checkbox-css.md)
 - [Radiogroup with CSS](radiogroup-css.md)
