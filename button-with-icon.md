@@ -1,0 +1,50 @@
+# Button with icon
+
+🖥️[Example](button-with-icon-example.html)
+
+- Use SVG icons with aria-hidden="true" and focusable="false"
+- Button should not contain icon only also for others than screen readers
+
+``` html
+<button>
+  <svg
+    viewBox="0 0 20 20"
+    width=".75em"
+    height=".75em"
+    xmlns="http://www.w3.org/2000/svg"
+    class="search__icon"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <path d="M19 17l-5.15-5.15a7 7 0 1 0-2 2L17 19zM3.5 8A4.5 4.5 0 1 1 8 12.5 4.5 4.5 0 0 1 3.5 8z"/>
+  </svg>
+  Search
+</button>
+
+<button>
+  <svg
+    viewBox="0 0 20 20"
+    width=".75em"
+    height=".75em"
+    xmlns="http://www.w3.org/2000/svg"
+    class="search__icon"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <path d="M19 17l-5.15-5.15a7 7 0 1 0-2 2L17 19zM3.5 8A4.5 4.5 0 1 1 8 12.5 4.5 4.5 0 0 1 3.5 8z"/>
+  </svg>
+  <span class="sr-only">Search</span>
+</button>
+```
+
+```css
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(100%); 
+  height: 1px; 
+  overflow: hidden; 
+  position: absolute; 
+  white-space: nowrap; 
+  width: 1px; 
+}
+```
